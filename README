@@ -1,14 +1,30 @@
-Chain Gang v0.0
--------------------------------------------
-
-Last Updated 4/4/09
-
+Chain Gang v0.0  Last Updated 4/4/09
+===========================================
 
 SUMMARY
 
-Chain Gang is a base Rails application.  It comes with a bunch of goodies and helps you by saving you the trouble from installing and configuring everything.  It was built using Rails 2.3.2.
+Chain Gang is a base Rails application.  It comes with a bunch of goodies and helps you by saving you the trouble from installing and configuring everything.  It was built using Rails 2.3.2. a a variety of gems and plugins.
 
 INCLUDED
 ...in progress
+
+
+
+CONFIGURATION
+===========================================
+
+rake gems:install
+rake gems:install RAILS_ENV=test
+
+
+HOPTOAD------------------------------------
+
+For Hoptoad you should have something like this in config/initializers/hoptoad.rb.
+
+  HoptoadNotifier.configure do |config|
+    config.api_key = '1234567890abcdef'
+  end
+
+Use rake hoptoad:test to test that your api key is set-up correctly.  If everything is configured properly, that task will send a notice to hoptoad which will be visible immediately.
 
 

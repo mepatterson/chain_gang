@@ -34,15 +34,15 @@ module Thoughtbot
 
     # Return true if the Mile Marker functionality is enabled for the current environment
     def self.enabled?
-      environments.include?(ENV['RAILS_ENV'])
+      @@environments.include?(ENV['RAILS_ENV'])
     end
     
     def self.enable
-      environments.push ENV['RAILS_ENV']
+      @@environments.push ENV['RAILS_ENV']
     end
     
     def self.disable
-      environments.delete ENV['RAILS_ENV']
+      @@environments.delete ENV['RAILS_ENV']
     end
     
     def self.initialize_mile_marker()

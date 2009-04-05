@@ -1,0 +1,8 @@
+!!! XML
+%html
+  %head
+    %title= "Contacts: " + controller.action_name.capitalize
+    = javascript_include_tag :all, :cache => false
+  %body
+    #content
+      = yield

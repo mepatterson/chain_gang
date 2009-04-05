@@ -16,11 +16,11 @@ Rails::Initializer.run do |config|
 
   # Specify gems that this application depends on and have them installed with rake gems:install
   # config.gem "bj"
-  # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem 'RedCloth', :lib => 'redcloth'
   config.gem 'fastercsv', :lib => 'fastercsv'
+  config.gem 'hpricot'
   config.gem 'haml', :lib => 'haml'
   config.gem 'rubyist-aasm', :lib => 'aasm', :source => 'http://gems.github.com'
   config.gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com'
@@ -45,3 +45,13 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+# Do not reply e-mail address used by Clearance for e-mail notifications
+DO_NOT_REPLY = "donotreply@#{HOST}"
+
+# Configure the Mile-Marker environments (eg. only use in dev and staging)
+Thoughtbot::MileMarker.environments = %w(development staging)
+Thoughtbot::MileMarker.options.update(
+  :z_index => 100,
+  :background_color => "purple"
+)

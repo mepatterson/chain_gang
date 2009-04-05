@@ -34,6 +34,7 @@ config.gem 'thoughtbot-shoulda', :lib => 'shoulda', :source => 'http:/gems.githu
 config.gem 'webrat', :lib => false
 config.gem 'cucumber', :lib => false
 
-require 'factory_girl'
-require 'mocha'
+# begin/rescue to help avoid problems with gems:install if done for the first time
+begin require 'factory_girl'; rescue LoadError; end
+begin require 'mocha'; rescue LoadError; end
 begin require 'redgreen'; rescue LoadError; end

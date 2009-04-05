@@ -6,7 +6,24 @@ SUMMARY
 Chain Gang is a base Rails application.  It comes with a bunch of goodies and helps you by saving you the trouble from installing and configuring everything.  It was built using Rails 2.3.2. a a variety of gems and plugins.
 
 INCLUDED
-...in progress
+* RedCloth
+* FasterCSV
+* HAML / SASS
+* Acts as State Machine (AASM)
+* Will Paginate
+* Clearance
+* Mocha
+* Factory Girl
+* Shoulda
+* Webrat
+* Cucumber
+* Redgreen
+
+* Hoptoad Notifier
+* Limerick Rake
+* Mile Marker
+* Paperclip
+* Squirrel
 
 
 

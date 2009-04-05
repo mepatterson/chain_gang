@@ -53,5 +53,5 @@ DO_NOT_REPLY = "donotreply@#{HOST}"
 Thoughtbot::MileMarker.environments = %w(development staging)
 Thoughtbot::MileMarker.options.update(
   :z_index => 100,
-  :background_color => "purple"
+  :background_color => "slateblue"
 )

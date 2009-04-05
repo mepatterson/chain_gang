@@ -5,7 +5,9 @@ SUMMARY
 
 Chain Gang is a base Rails application.  It comes with a bunch of goodies and helps you by saving you the trouble from installing and configuring everything.  It was built using Rails 2.3.2. a a variety of gems and plugins.
 
+
 INCLUDED
+
 * RedCloth
 * FasterCSV
 * HAML / SASS
@@ -24,7 +26,7 @@ INCLUDED
 * Mile Marker
 * Paperclip
 * Squirrel
-
+* Rails Flash Fader
 
 
 CONFIGURATION
@@ -32,6 +34,9 @@ CONFIGURATION
 
 rake gems:install
 rake gems:install RAILS_ENV=test
+rake db:migrate
+
+You're good to go!
 
 
 HOPTOAD------------------------------------

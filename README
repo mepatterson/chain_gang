@@ -1,32 +1,35 @@
-Chain Gang v0.0  Last Updated 4/4/09
+CHAIN_GANG v0.1  -  Last Updated 4/5/09
 ===========================================
+laying the foundation and building the rails...
+
 
 SUMMARY
 
 Chain Gang is a base Rails application.  It comes with a bunch of goodies and helps you by saving you the trouble from installing and configuring everything.  It was built using Rails 2.3.2. a a variety of gems and plugins.
 
+It comes with a simple CSS to start with, fancy fading flash messages, and a starter admin user.
 
-INCLUDED
 
-* RedCloth
-* FasterCSV
-* HAML / SASS
-* Acts as State Machine (AASM)
-* Will Paginate
-* Clearance
-* Mocha
-* Factory Girl
-* Shoulda
-* Webrat
-* Cucumber
-* Redgreen
+GANG MEMBERS
 
-* Hoptoad Notifier
-* Limerick Rake
-* Mile Marker
-* Paperclip
-* Squirrel
-* Rails Flash Fader
+* RedCloth  (http://redcloth.org/)
+* FasterCSV  (http://fastercsv.rubyforge.org/)
+* HAML / SASS  (http://haml.hamptoncatlin.com/)
+* Acts as State Machine (AASM)  (http://rubyi.st/aasm/)
+* Will Paginate  (http://errtheblog.com/posts/56-im-paginating-again)
+* Clearance  (http://github.com/thoughtbot/clearance/tree/master)
+* Mocha  (http://github.com/floehopper/mocha/tree/master)
+* Factory Girl  (http://www.thoughtbot.com/projects/factory_girl)
+* Shoulda  (http://www.thoughtbot.com/projects/shoulda)
+* Webrat  (http://github.com/brynary/webrat/tree/master)
+* Cucumber  (http://cukes.info/)
+
+* Hoptoad Notifier  (http://github.com/thoughtbot/hoptoad_notifier/tree/master)
+* Limerick Rake  (http://github.com/thoughtbot/limerick_rake/tree/master)
+* Mile Marker  (http://www.thoughtbot.com/projects/mile_marker)
+* Paperclip  (http://www.thoughtbot.com/projects/paperclip)
+* Squirrel  (http://www.thoughtbot.com/projects/squirrel)
+* Rails Flash Fader  (http://github.com/ncancelliere/rails_flash_fader/tree/master)
 
 
 CONFIGURATION
@@ -37,6 +40,8 @@ rake gems:install RAILS_ENV=test
 rake db:migrate
 
 You're good to go!
+
+An admin user (admin / admin) is created for you to start with...
 
 
 HOPTOAD------------------------------------
@@ -49,4 +54,9 @@ For Hoptoad you should have something like this in config/initializers/hoptoad.r
 
 Use rake hoptoad:test to test that your api key is set-up correctly.  If everything is configured properly, that task will send a notice to hoptoad which will be visible immediately.
 
+
+TODO
+===========================================
+* add Capistrano recipes
+* fully HAMLfy remaining ERBs (e.g. the auto-generated Clearance views)
 

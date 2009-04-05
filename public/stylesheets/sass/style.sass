@@ -6,18 +6,49 @@
     font: 16px Arial, Helvetica, sans-serif
     padding: 0.5em 2em 2em 2em
 
-  label
-    display: block
-
-  input
-    display: block
-    margin-bottom: 1em
-
   h1, h2, h3
     text-transform: uppercase
-    
   
   // created classes
+  .text_field, .password_field
+    clear: both
+    float: none
+    padding: 0.6em 0 0.6em 0
+    label
+      clear: left
+      display: block
+      float: left
+      text-align: right
+      width: 140px
+    input
+      clear: right
+      float: left
+      margin-left: 10px
+      width: 200px
+      
+  .check_box_field
+    clear: both
+    float: none
+    position: relative
+    padding: 0.6em 0 0.6em 0
+    label
+      clear: right
+      display: block
+      float: left
+      text-align: left
+      margin-left: 4px
+      width: 140px
+    input
+      clear: right
+      float: left
+      margin-left: 148px
+      
+  input[type="submit"]
+    display: block
+    margin: 2em 0 2em 0
+    padding: 0.6em 0 0.6em 0
+    margin-left: 148px
+  
   .success
     background: lightgreen
     border-bottom: 3px solid green
